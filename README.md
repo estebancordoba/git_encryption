@@ -46,3 +46,9 @@ Then, simply perform `git add` and `git commit` for both the `.gitattributes` fi
 
 - Ensure all team members needing to work with encrypted files have Transcrypt configured with the same password.
 - Do not share the password through insecure means. Consider using a secure password manager or encrypted communication to distribute the team's password.
+- Please note that the `git add` command should be performed through the console (terminal or command line). Using graphical tools or interfaces for version control might not correctly handle the encryption process and could lead to failures. Always use the command line for adding and committing the `.gitattributes` file and any files you wish to encrypt:
+
+    ```bash
+    git add .gitattributes yourfile.secret
+    git commit -m "Configure encryption for specific files"
+    ```

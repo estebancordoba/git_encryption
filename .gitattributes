@@ -3,5 +3,4 @@
 debug.keystore filter=crypt diff=crypt merge=crypt
 test.keystore filter=crypt diff=crypt merge=crypt
 google-services.json filter=crypt diff=crypt merge=crypt
-Info.plist filter=crypt diff=crypt merge=crypt
 my-release-key.keystore filter=crypt diff=crypt merge=crypt

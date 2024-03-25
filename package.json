@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "encrypt-secrets": "tar -czvf secrets.tar.gz secrets/ && gpg -c secrets.tar.gz && rm secrets.tar.gz",
+    "decrypt-secrets": "gpg -d secrets.tar.gz.gpg > secrets.tar.gz && tar -xzvf secrets.tar.gz && rm secrets.tar.gz"
+  }
+}
